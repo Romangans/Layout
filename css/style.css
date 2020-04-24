@@ -1,3 +1,76 @@
-body{
-    background-color: orange;
+body {
+  width: 1280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  font-family: "Arial";
+}
+.container {
+  width: 1280px;
+  margin: 0 auto;
+}
+.main-header {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+  color: #fff;
+  background-color: #445162;
+}
+.main-header:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.main-header-wrp {
+  width: 400px;
+  /* размеры по макету */
+  float: left;
+}
+.main-header-title {
+  display: block;
+  margin: 0 0 20px 0;
+  font-family: Arial;
+  font-size: 45px;
+  font-weight: bold;
+}
+.main-header-list {
+  margin: 0 0 0 0;
+}
+.main-header-img {
+  display: block;
+  float: right;
+  background-color: #fff;
+}
+.first-section {
+  width: 100%;
+  padding: 50px;
+  box-sizing: border-box;
+}
+.first-section:after {
+  content: "";
+  display: block;
+  width: 100%;
+  clear: both;
+}
+.first-section h2 {
+  margin: 0;
+}
+.first-section-article-text {
+  margin: 20px 0 0 0;
+}
+.first-section-article {
+  width: 653px;
+  color: #445162;
+  float: left;
+}
+.first-section-article-text {
+  font-size: 16px;
+  line-height: 24px;
+  font-weight: 400;
+}
+.media {
+  width: 430px;
+  height: 245px;
+  background-color: #445162;
+  float: right;
 }
