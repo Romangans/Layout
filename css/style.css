@@ -114,7 +114,7 @@ body {
   margin: 0;
 }
 
-.dignity-section-li {
+.dignity-section-li:before {
   content: "+";
   display: block;
   width: 32px;
