@@ -219,3 +219,60 @@ body {
     line-height: 24px;
     color: #333333;
 }
+
+.reviews-section {
+    width: 100%;
+    padding: 50px;
+    background-color: #f5f5f5;
+}
+
+.reviews-h2 {
+    text-align: center;
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.reviews-photo {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background-image: url(/img/AvatarReviews.jpg);
+    background-size: 100%;
+    float: left;
+    margin: 0 16px 0 0;
+}
+
+.reviews-content-figure {
+    width: 45%;
+}
+
+.reviews-content-main {
+
+    color: #333333;
+    font-family: "Arial";
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+}
+
+.reviews-content-figcaption {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ccc;
+    position: relative;
+}
+
+.reviews-content-figcaption:before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ccc;
+
+    position: absolute;
+    top: 20px;
+    left: -30px;
+}
