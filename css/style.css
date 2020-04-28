@@ -342,3 +342,92 @@ body {
     font-size: 14px;
     line-height: 18px;
 }
+/*-----------------------------*/
+.buy-section {
+    width: 100%;
+    padding: 25px 145px;
+    box-sizing: border-box;
+}
+
+.buy-h2 {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+}
+
+.buy-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+
+}
+
+.buy-card {
+    background-color: #445161;
+    width: 31%;
+    margin: 10px;
+}
+
+.buy-card-content {
+    text-align: center;
+    padding: 20px 2px;
+}
+
+.buy-card-span {
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+}
+
+.buy-card-p {
+    color: #445162;
+    font-family: "Arial";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #fff;
+    padding: 13px;
+}
+
+
+.buy-card-li {
+    text-align: left;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.buy-link {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 87%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #445161;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.buy-link:hover {
+    background-color: #445161;
+    color: #fff;
+}
+
+.buy-link:active {
+    background-color: #fff;
+    color: #445161;
+}
+/*------------------------------*/
