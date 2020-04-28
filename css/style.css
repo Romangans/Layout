@@ -535,3 +535,88 @@ textarea[placeholder] {
     background-color: #ffffff;
     color: #445162;
 }
+
+.footer-contacts {
+    width: 240px;
+    border: 1px solid #fff;
+}
+
+
+
+.contacts-info {
+    display: block;
+    margin: 1px 0 25px 0;
+    padding: 7px 0 0 38px;
+    box-sizing: border-box;
+    position: relative;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts-info::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contacts-info:nth-child(1)::before {
+    background-image: url(/img/skype_icon.svg);
+
+}
+
+.contacts-info:nth-child(2)::before {
+    background-image: url(/img/icq_icon.svg);
+}
+
+.contacts-info:nth-child(3)::before {
+    background-image: url(/img/email_icon.svg);
+}
+
+.contacts-info:nth-child(4)::before {
+    background-image: url(/img/phone_icon.svg);
+}
+
+/* не понял как перекрасить в белый цвет*/
+
+.contacts-social {
+    width: 100%;
+    display: flex;
+}
+
+
+.contacts-social-link {
+    display: block;
+    width: 48px;
+    height: 42px;
+    background-image: url(/img/social_buttons.png)
+}
+
+.contacts-social-link:nth-child(1) {
+    background-position: -1px 0 background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(2) {
+    background-position: -44px 0;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(3) {
+    background-position: -93px 0;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(4) {
+    background-position: -144px 0;
+    background-repeat: no-repeat;
+}
