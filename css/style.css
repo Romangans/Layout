@@ -10,6 +10,7 @@ body {
 }
 
 .container {
+    width: 1280px;
     margin: 0 auto;
 }
 
@@ -261,69 +262,23 @@ body {
 }
 
 /* Это жёсткий костыль, но я не придумал, как это сделать по другому*/
-.reviews-content-figcaption1 {
+.reviews-content-figcaption {
     width: 70%;
     padding: 10px;
     border-radius: 5px;
     background-color: #ebebeb;
     margin: 0 0 0 128px;
+    position: relative;
 }
 
-.reviews-content-figcaption2 {
-    width: 70%;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ebebeb;
-    margin: 0 0 0 128px;
-}
-
-.reviews-content-figcaption3 {
-    width: 70%;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ebebebcc;
-    margin: 0 0 0 128px;
-}
-
-.reviews-content-figcaption4 {
-    width: 70%;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: #ebebeb;
-    margin: 0 0 0 128px;
-}
-
-.reviews-content-figcaption1::before {
+.reviews-content-figcaption::before {
     content: "";
     border: 15px solid transparent;
     border-right: 15px solid #ebebeb;
     position: absolute;
-    left: 280px;
+    top: 15px;
+    left: -29px;
 
-}
-
-.reviews-content-figcaption2::before {
-    content: "";
-    border: 15px solid transparent;
-    border-right: 15px solid #ebebeb;
-    position: absolute;
-    left: 869px;
-}
-
-.reviews-content-figcaption3::before {
-    content: "";
-    border: 15px solid transparent;
-    border-right: 15px solid #ebebeb;
-    position: absolute;
-    left: 280px;
-}
-
-.reviews-content-figcaption4::before {
-    content: "";
-    border: 15px solid transparent;
-    border-right: 15px solid #ebebeb;
-    position: absolute;
-    left: 869px;
 }
 
 .reviews-content-p-main {
@@ -332,6 +287,7 @@ body {
     font-style: italic;
     font-size: 14px;
     line-height: 18px;
+    margin: 0 0 5px 0;
 }
 
 .reviews-content-p-side {
@@ -339,6 +295,7 @@ body {
     font-family: "Arial";
     font-size: 14px;
     line-height: 18px;
+    margin: 0;
 }
 
 /*-----------------------------*/
@@ -354,6 +311,7 @@ body {
     font-size: 30px;
     line-height: 36px;
     text-align: center;
+    margin: 0 0 20px 0;
 }
 
 .buy-content {
@@ -362,18 +320,23 @@ body {
     flex-wrap: wrap;
     justify-content: center;
     align-items: flex-end;
+    text-align: center;
+    padding: 0 0 20px 0;
 
 }
 
 .buy-card {
     background-color: #445161;
-    width: 31%;
+    width: 30%;
     margin: 10px;
+    border: 2px solid #445161;
+    border-radius: 10px;
 }
 
 .buy-card-content {
     text-align: center;
-    padding: 20px 2px;
+    padding: 0px 2px 20px 2px;
+
 }
 
 .buy-card-span {
@@ -382,6 +345,10 @@ body {
     font-size: 24px;
     font-weight: 400;
     line-height: 30px;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+
 }
 
 .buy-card-p {
@@ -392,6 +359,7 @@ body {
     line-height: 30px;
     background-color: #fff;
     padding: 13px;
+    margin: 0;
 }
 
 
@@ -603,7 +571,8 @@ textarea[placeholder] {
 }
 
 .contacts-social-link:nth-child(1) {
-    background-position: -1px 0 background-repeat: no-repeat;
+    background-position: -1px 0;
+    background-repeat: no-repeat;
 }
 
 .contacts-social-link:nth-child(2) {
