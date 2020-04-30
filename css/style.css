@@ -1,7 +1,6 @@
 body {
-    width: 1280px;
+    width: 100%;
     margin: 0 auto;
-    box-sizing: border-box;
     font-family: "Arial";
 }
 
@@ -218,4 +217,375 @@ body {
     font-size: 15px;
     line-height: 24px;
     color: #333333;
+}
+
+/*----------------------------------------*/
+
+
+.reviews-section {
+    width: 100%;
+    padding: 50px;
+    background-color: #f5f5f5;
+    box-sizing: border-box;
+}
+
+.reviews-h2 {
+    text-align: center;
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    line-height: 36px;
+    margin: 0 auto;
+}
+
+.reviews-content {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.reviews-content-figure {
+    width: 48%;
+    margin: 0 auto;
+    padding: 10px;
+    align-items: center;
+}
+
+.reviews-photo {
+    width: 75px;
+    height: 75px;
+    margin: 0 10px 0 0;
+    border-radius: 50%;
+    background-image: url(/img/AvatarReviews.jpg);
+    background-size: 100%;
+    float: left;
+    margin: 0 16px 0 0;
+}
+
+/* Это жёсткий костыль, но я не придумал, как это сделать по другому*/
+.reviews-content-figcaption {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #ebebeb;
+    margin: 0 0 0 128px;
+    position: relative;
+}
+
+.reviews-content-figcaption::before {
+    content: "";
+    border: 15px solid transparent;
+    border-right: 15px solid #ebebeb;
+    position: absolute;
+    top: 15px;
+    left: -29px;
+
+}
+
+.reviews-content-p-main {
+    color: #333333;
+    font-family: "Arial";
+    font-style: italic;
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0 0 5px 0;
+}
+
+.reviews-content-p-side {
+    color: #989898;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 18px;
+    margin: 0;
+}
+
+/*-----------------------------*/
+.buy-section {
+    width: 100%;
+    padding: 25px 145px;
+    box-sizing: border-box;
+}
+
+.buy-h2 {
+    color: #445161;
+    font-family: "Arial";
+    font-size: 30px;
+    line-height: 36px;
+    text-align: center;
+    margin: 0 0 20px 0;
+}
+
+.buy-content {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-end;
+    text-align: center;
+    padding: 0 0 20px 0;
+
+}
+
+.buy-card {
+    background-color: #445161;
+    width: 30%;
+    margin: 10px;
+    border: 2px solid #445161;
+    border-radius: 10px;
+}
+
+.buy-card-content {
+    text-align: center;
+    padding: 0px 2px 20px 2px;
+
+}
+
+.buy-card-span {
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    display: block;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+.buy-card-p {
+    color: #445162;
+    font-family: "Arial";
+    font-size: 40px;
+    font-weight: 400;
+    line-height: 30px;
+    background-color: #fff;
+    padding: 13px;
+    margin: 0;
+}
+
+
+.buy-card-li {
+    text-align: left;
+    font-family: "Arial";
+    font-size: 14px;
+    line-height: 24px;
+    color: #ffffff;
+}
+
+.buy-link {
+    display: block;
+    margin: 0 auto;
+    padding: 10px 10px;
+    width: 87%;
+    background-color: #fff;
+    border: 1px solid #fff;
+    border-radius: 5px;
+    outline: none;
+    cursor: pointer;
+    color: #445161;
+    font-family: "Arial";
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.buy-link:hover {
+    background-color: #445161;
+    color: #fff;
+}
+
+.buy-link:active {
+    background-color: #fff;
+    color: #445161;
+}
+
+/*------------------------------*/
+
+.footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    padding: 50px;
+    background-color: #445161;
+}
+
+.footer-span {
+    display: block;
+    width: 100%;
+    margin: 0 0 30px 0;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 36px;
+    text-align: center;
+}
+
+.footer-form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 500px;
+    margin: 0 46px 0 0;
+}
+
+.footer-form input[type="text"],
+.footer-form input[type="email"],
+.footer-form textarea {
+    width: 100%;
+    height: 40px;
+    margin: 0 0 20px 0;
+    padding: 10px;
+    box-sizing: border-box;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+    text-transform: capitalize;
+}
+
+.footer-form input[type="text"]:hover,
+.footer-form input[type="email"]:hover,
+.footer-form textarea:hover {
+    background-color: gray;
+    color: white;
+    border-color: white;
+}
+
+.footer-form input[type="text"]:hover::placeholder,
+.footer-form input[type="email"]:hover::placeholder,
+.footer-form textarea:hover::placeholder {
+    color: white;
+}
+
+.footer-form textarea {
+    width: 500px;
+    height: 170px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    background-color: #ffffff;
+    outline: none;
+}
+
+input[placeholder],
+textarea[placeholder] {
+    text-overflow: ellipsis;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+    text-align: left;
+}
+
+.footer-form input[type="submit"] {
+    border-radius: 5px;
+    border: 1px solid #fff;
+    background-color: #ffffff;
+    width: 140px;
+    height: 40px;
+    text-transform: uppercase;
+    font-family: Arial;
+    color: #445162;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    text-align: center;
+    outline: none;
+}
+
+.footer-form input[type="submit"]:hover {
+    background-color: gray;
+    color: white;
+}
+
+.footer-form input[type="submit"]:active {
+    background-color: #ffffff;
+    color: #445162;
+}
+
+.footer-contacts {
+    width: 240px;
+    border: 1px solid #fff;
+}
+
+
+
+.contacts-info {
+    display: block;
+    margin: 1px 0 25px 0;
+    padding: 7px 0 0 38px;
+    box-sizing: border-box;
+    position: relative;
+    color: #ffffff;
+    font-family: "Arial";
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 24px;
+}
+
+.contacts-info::before {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    box-sizing: border-box;
+    position: absolute;
+    top: 5px;
+    left: 0;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contacts-info:nth-child(1)::before {
+    background-image: url(/img/skype_icon.svg);
+
+}
+
+.contacts-info:nth-child(2)::before {
+    background-image: url(/img/icq_icon.svg);
+}
+
+.contacts-info:nth-child(3)::before {
+    background-image: url(/img/email_icon.svg);
+}
+
+.contacts-info:nth-child(4)::before {
+    background-image: url(/img/phone_icon.svg);
+}
+
+/* не понял как перекрасить в белый цвет*/
+
+.contacts-social {
+    width: 100%;
+    display: flex;
+}
+
+
+.contacts-social-link {
+    display: block;
+    width: 48px;
+    height: 42px;
+    background-image: url(/img/social_buttons.png)
+}
+
+.contacts-social-link:nth-child(1) {
+    background-position: -1px 0;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(2) {
+    background-position: -44px 0;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(3) {
+    background-position: -93px 0;
+    background-repeat: no-repeat;
+}
+
+.contacts-social-link:nth-child(4) {
+    background-position: -144px 0;
+    background-repeat: no-repeat;
 }
